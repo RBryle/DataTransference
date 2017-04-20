@@ -1,4 +1,4 @@
-![alt tag](https://github.com/RBryle/DataTransference/blob/master/DataTransference/amiga4ever%20pro.ttf)
+![alt tag](https://github.com/RBryle/DataTransference/blob/master/DataTransference/screenshot.png)
 
 DataTransference
 ================
@@ -7,8 +7,3 @@ DataTransference
 Passing data around VCs
 ```
 
-
-
-
-
-https://github.com/RBryle/DataTransference/blob/master/DataTransference/amiga4ever%20pro.ttf
