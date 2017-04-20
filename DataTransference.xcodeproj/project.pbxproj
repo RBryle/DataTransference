@@ -11,7 +11,9 @@
 		FC284ABB1EA80D1700555568 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC284ABA1EA80D1700555568 /* ViewController.swift */; };
 		FC284ABE1EA80D1700555568 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC284ABC1EA80D1700555568 /* Main.storyboard */; };
 		FC284AC01EA80D1700555568 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC284ABF1EA80D1700555568 /* Assets.xcassets */; };
-		FC284AC31EA80D1700555568 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC284AC11EA80D1700555568 /* LaunchScreen.storyboard */; };
+		FC284ACB1EA80D6D00555568 /* amiga4ever pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC284ACA1EA80D6D00555568 /* amiga4ever pro.ttf */; };
+		FC284ACF1EA8151900555568 /* DataHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC284ACE1EA8151900555568 /* DataHub.swift */; };
+		FC3BAE6D1EA83B9400421474 /* screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = FC3BAE6C1EA83B9400421474 /* screenshot.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,8 +22,10 @@
 		FC284ABA1EA80D1700555568 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FC284ABD1EA80D1700555568 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC284ABF1EA80D1700555568 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FC284AC21EA80D1700555568 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC284AC41EA80D1700555568 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC284ACA1EA80D6D00555568 /* amiga4ever pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "amiga4ever pro.ttf"; sourceTree = "<group>"; };
+		FC284ACE1EA8151900555568 /* DataHub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataHub.swift; sourceTree = "<group>"; };
+		FC3BAE6C1EA83B9400421474 /* screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +58,14 @@
 		FC284AB71EA80D1700555568 /* DataTransference */ = {
 			isa = PBXGroup;
 			children = (
-				FC284AB81EA80D1700555568 /* AppDelegate.swift */,
-				FC284ABA1EA80D1700555568 /* ViewController.swift */,
-				FC284ABC1EA80D1700555568 /* Main.storyboard */,
-				FC284ABF1EA80D1700555568 /* Assets.xcassets */,
-				FC284AC11EA80D1700555568 /* LaunchScreen.storyboard */,
 				FC284AC41EA80D1700555568 /* Info.plist */,
+				FC3BAE6C1EA83B9400421474 /* screenshot.png */,
+				FC284AB81EA80D1700555568 /* AppDelegate.swift */,
+				FC284ACE1EA8151900555568 /* DataHub.swift */,
+				FC284ABA1EA80D1700555568 /* ViewController.swift */,
+				FC284ACA1EA80D6D00555568 /* amiga4ever pro.ttf */,
+				FC284ABF1EA80D1700555568 /* Assets.xcassets */,
+				FC284ABC1EA80D1700555568 /* Main.storyboard */,
 			);
 			path = DataTransference;
 			sourceTree = "<group>";
@@ -124,9 +130,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC284AC31EA80D1700555568 /* LaunchScreen.storyboard in Resources */,
+				FC284ACB1EA80D6D00555568 /* amiga4ever pro.ttf in Resources */,
 				FC284AC01EA80D1700555568 /* Assets.xcassets in Resources */,
 				FC284ABE1EA80D1700555568 /* Main.storyboard in Resources */,
+				FC3BAE6D1EA83B9400421474 /* screenshot.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC284ACF1EA8151900555568 /* DataHub.swift in Sources */,
 				FC284ABB1EA80D1700555568 /* ViewController.swift in Sources */,
 				FC284AB91EA80D1700555568 /* AppDelegate.swift in Sources */,
 			);
@@ -151,14 +159,6 @@
 				FC284ABD1EA80D1700555568 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		FC284AC11EA80D1700555568 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FC284AC21EA80D1700555568 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -302,6 +302,7 @@
 				FC284AC91EA80D1700555568 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
