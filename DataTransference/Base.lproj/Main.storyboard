@@ -101,7 +101,7 @@
                                 <fontDescription key="fontDescription" name="AmigaForeverPro" family="Amiga Forever Pro" pointSize="17"/>
                                 <state key="normal" title="&lt;SEND&gt;"/>
                                 <connections>
-                                    <action selector="sendButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XEc-Wd-Y29"/>
+                                    <action selector="sendDataButton:" destination="wGs-h7-JgG" eventType="touchUpInside" id="MY3-NR-I43"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Data Hub" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="reV-dE-Ybf">

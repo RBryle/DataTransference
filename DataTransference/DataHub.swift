@@ -8,9 +8,21 @@
 
 import UIKit
 
+protocol Responder {
+    func resondToData(data: String)
+}
+
 class DataHub: UIViewController {
     @IBOutlet weak var data: UITextField!
     var dataReceived: String?
+    var delegate: Responder?
+    
+    @IBAction func sendDataButton(_ sender: Any) {
+        delegate?.resondToData(data: data.text!)
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -19,7 +31,13 @@ class DataHub: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if delegate == nil {
+            print("We do not have a delegate!")
+        }
 
+        
+        
         // Do any additional setup after loading the view.
     }
 

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, Responder {
 
     @IBOutlet weak var dataInput: UITextField!
     @IBOutlet weak var dataOutput: UITextView!
@@ -22,6 +22,7 @@ class ViewController: UIViewController {
         if segue.identifier == "DataHub" {
         let dataHub = segue.destination as! DataHub
         dataHub.dataReceived = (sender as! String)
+        dataHub.delegate = self
         }
     }
     
@@ -34,5 +35,11 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func resondToData(data: String) {
+        dataOutput.text = data 
+    }
+    
+    
 }
 
