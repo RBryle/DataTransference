@@ -65,6 +65,10 @@
                             </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="2ZE-2F-Q6e" appends="YES" id="8bd-wi-cs6"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="dataInput" destination="IzV-cT-Wif" id="lTh-3Z-tBb"/>
@@ -73,6 +77,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="2ZE-2F-Q6e"/>
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
         </scene>
@@ -120,12 +125,21 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="mPd-CC-Jak" appends="YES" id="0Ce-z7-jYi"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="data" destination="4PG-ip-HLr" id="qT0-TF-vqJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Daa-jC-QGN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="mPd-CC-Jak">
+                    <connections>
+                        <action selector="ridKeyboard:" destination="wGs-h7-JgG" id="efD-wm-wqz"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="877.60000000000002" y="36.431784107946029"/>
         </scene>

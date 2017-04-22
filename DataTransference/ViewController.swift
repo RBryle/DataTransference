@@ -18,6 +18,10 @@ class ViewController: UIViewController, Responder {
         performSegue(withIdentifier: "DataHub", sender: dataToTransfer)
     }
     
+    @IBAction func ridKeyboard(_ sender: Any) {
+        dataInput.resignFirstResponder()
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "DataHub" {
         let dataHub = segue.destination as! DataHub
@@ -37,9 +41,7 @@ class ViewController: UIViewController, Responder {
     }
     
     func resondToData(data: String) {
-        dataOutput.text = data 
+        dataOutput.text = data
     }
-    
-    
 }
 
